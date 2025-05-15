@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --color-anc-100: #111222;
+  --font-figtree: "Figtree", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --color-dark-100: #1f1f36;
+  --color-dark-200: #141627;
+  --color-dark-300: #101828;
+  --color-dark-400: #2e2c48;
+  --color-gray-100: #7f7e83;
+  --color-gray-200: #eaecf0;
+  --color-gray-500: #667085;
+  --color-gray-700: #344054;
+  --color-primary-50: #e9f3fb;
+  --color-primary-100: #256ff1;
+  --color-primary-500: #175cd3;
+  --color-light-100: #ecf2ef;
+  --color-light-200: #f9fbfc;
+  --color-light-300: #f2f4f7;
+  --color-light-400: #ebeeed;
+  --color-light-500: #e3f1ff;
+  --color-success-50: #ecfdf3;
+  --color-success-500: #12b76a;
+  --color-success-700: #027a48;
+  --color-pink-50: #f7edf6;
+  --color-pink-500: #c11574;
+  --color-navy-50: #f0f9ff;
+  --color-navy-500: #026aa2;
+  --color-red-500: #b93815;
+  --color-red-50: #fff4ed;
+  --color-red-100: #ff543d;
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-[12px] mx-1 bg-primary-500 hover:bg-primary-100;
+  }
+}
+
+@layer utilities {
+  .bg-red-600 {
+    @apply bg-green-600;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text text-transparent;
+  }
+}
+
+@utility text-gradient-100 {
+  @apply bg-gradient-to-r from-green-500 to-red-500 bg-clip-text text-transparent;
+}
+
+@utility bg-gradient-100 {
+  @apply bg-gradient-to-r from-purple-500 to-yellow-400;
+}
+@utility bg-gradient-200 {
+  @apply bg-gradient-to-r from-yellow-500 to-purple-400;
+}
