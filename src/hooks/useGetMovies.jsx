@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-const useGetMovies = (url, key = null) => {
+const useGetMovies = (url, key = null,) => {
 
     const [data, setData] = useState([]);
     const [isLoading, setLoading] = useState(false);
@@ -39,7 +39,7 @@ const useGetMovies = (url, key = null) => {
 
     useEffect(() => {
         getMovies(url, key);
-    }, [])
+    }, [url])
 
     return { data, isLoading, isError, }
 };

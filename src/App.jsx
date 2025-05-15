@@ -8,7 +8,13 @@ const App = () => {
     const [search, setSearch] = useState('');
     const API_BASE_URL = `https://api.themoviedb.org/3`;
     const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
-    const { data: { results: movies }, isError, isLoading } = useGetMovies(`${API_BASE_URL}/movie/popular`, API_KEY);
+
+    let end_point = `${API_BASE_URL}/movie/popular`;
+    if (search.length) {
+        end_point = `${API_BASE_URL}/search/movie?query=${search}`
+    }
+
+    const { data: { results: movies }, isError, isLoading } = useGetMovies(end_point, API_KEY);
 
     return (
         <React.Fragment>
@@ -23,6 +29,7 @@ const App = () => {
             </div>
         </React.Fragment>
     );
+
 };
 
 export default App;

@@ -11,7 +11,6 @@ const SearchSection = ({ search, setSearch }) => {
                             placeholder='Search your Movies!'
                             className='p-4 my-2 w-[400px] bg-blue-200 border-0 text-green-600 text-xl rounded-2xl' />
                     </form>
-                    {search}
                 </div>
             </section>
         </React.Fragment>
