@@ -5,7 +5,7 @@ import Spinner from './base/Spinner';
 const Movies = ({ movies, isLoading, isError }) => {
     return (
         <React.Fragment>
-            <section className='w-full min-h-screen bg-cyan-200  '>
+            <section className='w-full min-h-screen bg-cyan-300  '>
                 <p className=' text-gradient p-4 text-3xl font-bold mx-10 font-mono'>All Movies</p>
                 {isLoading ? (
                     <div className='flex w-full h-screen justify-center items-center'>

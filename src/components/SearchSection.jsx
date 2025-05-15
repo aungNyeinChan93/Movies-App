@@ -9,7 +9,7 @@ const SearchSection = ({ search, setSearch }) => {
                     <form action="">
                         <input type="text" value={search} onChange={(e) => setSearch(e.target.value)}
                             placeholder='Search your Movies!'
-                            className='p-4 my-2 w-[400px] bg-blue-200 border-0 text-green-600 text-xl rounded-2xl' />
+                            className='p-4 my-2 sm:w-[500px] bg-blue-200 border-0 text-green-600 text-xl rounded-2xl' />
                     </form>
                 </div>
             </section>

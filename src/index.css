@@ -57,3 +57,7 @@
 @utility bg-gradient-200 {
   @apply bg-gradient-to-r from-yellow-500 to-purple-400;
 }
+
+body {
+  background: rgb(5, 15, 13);
+}

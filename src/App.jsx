@@ -11,14 +11,14 @@ const App = () => {
 
     let end_point = `${API_BASE_URL}/movie/popular`;
     if (search.length) {
-        end_point = `${API_BASE_URL}/search/movie?query=${search}`
+        end_point = `${API_BASE_URL}/search/movie?query=${encodeURIComponent(search)}`
     }
 
     const { data: { results: movies }, isError, isLoading } = useGetMovies(end_point, API_KEY);
 
     return (
         <React.Fragment>
-            <div className='w-full  bg-dark-100  rounded text-white'>
+            <div className='w-full !bg-dark-100 rounded text-white '>
                 <header>
                     <HeroSection />
                 </header>
