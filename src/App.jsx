@@ -4,8 +4,10 @@ import SearchSection from './components/SearchSection';
 import Movies from './components/Movies';
 import useGetMovies from './hooks/useGetMovies';
 import { useDebounce } from 'react-use';
+import { updateSearchCount } from './appwrite';
 
 const App = () => {
+    updateSearchCount();
     const [search, setSearch] = useState('');
     const [debounceSearch, setDebounceSearch] = useState('');
 
