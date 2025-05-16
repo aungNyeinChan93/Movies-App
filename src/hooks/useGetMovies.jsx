@@ -39,7 +39,7 @@ const useGetMovies = (url, key = null,) => {
 
     useEffect(() => {
         getMovies(url, key);
-    }, [url])
+    }, [url, key])
 
     return { data, isLoading, isError, }
 };

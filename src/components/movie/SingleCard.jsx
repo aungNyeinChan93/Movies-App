@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SingleCard = ({ id, backdrop_path, poster_path, original_title, overview, popularity, vote_average, release_date }) => {
+const SingleCard = ({ id, poster_path, original_title, overview, popularity, vote_average, release_date }) => {
     return (
         <React.Fragment>
             <a href={id} className="group relative block bg-black ">
